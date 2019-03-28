@@ -210,7 +210,7 @@ pdfListView.getSelectionModel().selectedItemProperty().addListener(
                     } else {
                         mergeList.add(newValue.getText());
                     }
-                } 
+                }
             }
         }
 

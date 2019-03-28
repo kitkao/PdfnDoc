@@ -7,9 +7,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="com.jfoenix:jfoenix:8.0.8" level="project" />
-    <orderEntry type="library" exported="" name="com.itextpdf:itextpdf:5.5.13" level="project" />
-    <orderEntry type="library" exported="" name="commons-io:commons-io:2.6" level="project" />
     <orderEntry type="module-library">
       <library>
         <CLASSES>
@@ -19,7 +16,6 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" exported="" name="de.jensd:fontawesomefx-commons:9.1.2" level="project" />
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
@@ -29,6 +25,10 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" exported="" name="jacob" level="project" />
+    <orderEntry type="library" name="com.itextpdf:itextpdf:5.5.13" level="project" />
+    <orderEntry type="library" name="com.jfoenix:jfoenix:8.0.8" level="project" />
+    <orderEntry type="library" name="commons-io:commons-io:2.6" level="project" />
+    <orderEntry type="library" name="de.jensd:fontawesomefx-commons:9.1.2" level="project" />
+    <orderEntry type="library" name="jacob" level="project" />
   </component>
 </module>

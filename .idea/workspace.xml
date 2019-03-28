@@ -7,139 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="fix thread">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/docsUI/bundles/docsUI/runtime/bin/client/Xusage.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/docsUI/bundles/docsUI/runtime/bin/client/classes.jsa" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/docsUI/bundles/docsUI/runtime/lib/ext/access-bridge-32.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/docsUI/bundles/docsUI/runtime/lib/i386/jvm.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/com_jfoenix_jfoenix_9_0_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsUI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/docsUI.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/LICENSE.TXT" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/LICENSE.TXT" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/BuildingJacobFromSource.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/BuildingJacobFromSource.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/EventCallbacks.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/EventCallbacks.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/JacobComLifetime.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/JacobComLifetime.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/JacobThreading.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/JacobThreading.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/ReleaseNotes.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/ReleaseNotes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/UsingJacob.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/UsingJacob.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/allclasses-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/allclasses-frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/allclasses-noframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/allclasses-noframe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/activeX/ActiveXComponent.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/activeX/ActiveXComponent.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/activeX/ActiveXDispatchEvents.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/activeX/ActiveXDispatchEvents.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/activeX/ActiveXInvocationProxy.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/activeX/ActiveXInvocationProxy.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/activeX/class-use/ActiveXComponent.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/activeX/class-use/ActiveXComponent.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/activeX/class-use/ActiveXDispatchEvents.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/activeX/class-use/ActiveXDispatchEvents.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/activeX/class-use/ActiveXInvocationProxy.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/activeX/class-use/ActiveXInvocationProxy.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/activeX/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/activeX/package-frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/activeX/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/activeX/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/activeX/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/activeX/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/activeX/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/activeX/package-use.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/ComException.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/ComException.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/ComFailException.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/ComFailException.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/ComThread.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/ComThread.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/Currency.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/Currency.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/DateUtilities.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/DateUtilities.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/Dispatch.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/Dispatch.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/DispatchEvents.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/DispatchEvents.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/DispatchIdentifier.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/DispatchIdentifier.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/DispatchProxy.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/DispatchProxy.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/EnumVariant.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/EnumVariant.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/InvocationProxy.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/InvocationProxy.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/InvocationProxyAllVariants.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/InvocationProxyAllVariants.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/JacobException.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/JacobException.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/JacobObject.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/JacobObject.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/JacobReleaseInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/JacobReleaseInfo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/LibraryLoader.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/LibraryLoader.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/MainSTA.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/MainSTA.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/NotImplementedException.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/NotImplementedException.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/ROT.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/ROT.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/STA.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/STA.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/SafeArray.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/SafeArray.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/Variant.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/Variant.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/VariantUtilities.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/VariantUtilities.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/VariantViaEvent.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/VariantViaEvent.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/WrongThreadException.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/WrongThreadException.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/class-use/ComException.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/class-use/ComException.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/class-use/ComFailException.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/class-use/ComFailException.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/class-use/ComThread.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/class-use/ComThread.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/class-use/Currency.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/class-use/Currency.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/class-use/DateUtilities.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/class-use/DateUtilities.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/class-use/Dispatch.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/class-use/Dispatch.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/class-use/DispatchEvents.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/class-use/DispatchEvents.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/class-use/DispatchIdentifier.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/class-use/DispatchIdentifier.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/class-use/DispatchProxy.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/class-use/DispatchProxy.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/class-use/EnumVariant.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/class-use/EnumVariant.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/class-use/InvocationProxy.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/class-use/InvocationProxy.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/class-use/InvocationProxyAllVariants.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/class-use/InvocationProxyAllVariants.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/class-use/JacobException.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/class-use/JacobException.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/class-use/JacobObject.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/class-use/JacobObject.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/class-use/JacobReleaseInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/class-use/JacobReleaseInfo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/class-use/LibraryLoader.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/class-use/LibraryLoader.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/class-use/MainSTA.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/class-use/MainSTA.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/class-use/NotImplementedException.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/class-use/NotImplementedException.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/class-use/ROT.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/class-use/ROT.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/class-use/STA.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/class-use/STA.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/class-use/SafeArray.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/class-use/SafeArray.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/class-use/Variant.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/class-use/Variant.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/class-use/VariantUtilities.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/class-use/VariantUtilities.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/class-use/VariantViaEvent.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/class-use/VariantViaEvent.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/class-use/WrongThreadException.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/class-use/WrongThreadException.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/package-frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/com/jacob/com/package-use.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/constant-values.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/deprecated-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/deprecated-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/help-doc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/index-all.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/index-all.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/overview-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/overview-frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/overview-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/overview-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/overview-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/package-list" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/package-list" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/serialized-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/serialized-form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jacob-1.19/docs/api/stylesheet.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/docsUI/bundles/docsUI.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/docsUI/bundles/docsUI.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/docsUI/bundles/docsUI.jnlp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/docsUI/bundles/docsUI.jnlp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/docsUI/bundles/docsUI/app/docsUI.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/docsUI/bundles/docsUI/app/docsUI.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/docsUI/bundles/docsUI/runtime/lib/charsets.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/docsUI/bundles/docsUI/runtime/lib/charsets.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/docsUI/bundles/docsUI/runtime/lib/ext/cldrdata.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/docsUI/bundles/docsUI/runtime/lib/ext/cldrdata.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/docsUI/bundles/docsUI/runtime/lib/ext/dnsns.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/docsUI/bundles/docsUI/runtime/lib/ext/dnsns.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/docsUI/bundles/docsUI/runtime/lib/ext/jaccess.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/docsUI/bundles/docsUI/runtime/lib/ext/jaccess.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/docsUI/bundles/docsUI/runtime/lib/ext/jfxrt.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/docsUI/bundles/docsUI/runtime/lib/ext/jfxrt.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/docsUI/bundles/docsUI/runtime/lib/ext/localedata.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/docsUI/bundles/docsUI/runtime/lib/ext/localedata.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/docsUI/bundles/docsUI/runtime/lib/ext/meta-index" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/docsUI/bundles/docsUI/runtime/lib/ext/meta-index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/docsUI/bundles/docsUI/runtime/lib/ext/nashorn.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/docsUI/bundles/docsUI/runtime/lib/ext/nashorn.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/docsUI/bundles/docsUI/runtime/lib/ext/zipfs.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/docsUI/bundles/docsUI/runtime/lib/ext/zipfs.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/docsUI/bundles/docsUI/runtime/lib/javaws.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/docsUI/bundles/docsUI/runtime/lib/javaws.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/docsUI/bundles/docsUI/runtime/lib/jfr.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/docsUI/bundles/docsUI/runtime/lib/jfr.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/docsUI/bundles/docsUI/runtime/lib/jfxswt.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/docsUI/bundles/docsUI/runtime/lib/jfxswt.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/docsUI/bundles/docsUI/runtime/lib/jsse.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/docsUI/bundles/docsUI/runtime/lib/jsse.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/docsUI/bundles/docsUI/runtime/lib/management-agent.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/docsUI/bundles/docsUI/runtime/lib/management-agent.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/docsUI/bundles/docsUI/runtime/lib/plugin.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/docsUI/bundles/docsUI/runtime/lib/plugin.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/docsUI/bundles/docsUI/runtime/lib/resources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/docsUI/bundles/docsUI/runtime/lib/resources.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/docsUI/bundles/docsUI/runtime/lib/rt.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/docsUI/bundles/docsUI/runtime/lib/rt.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/docsUI/bundles/docsUI_withoutAutomation.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/docsUI/bundles/docsUI_x86.zip" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/docsUI/bundles/docsUI_x86.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/docsUI/bundles/docsUI_x86_na.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/docsUI/docsUI.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/docsUI/docsUI.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/docsUI/docsUI.jnlp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/docsUI/docsUI.jnlp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/docsUI/docs2pdf/controllers/Doc2pdfController$DocFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/docsUI/docs2pdf/controllers/Doc2pdfController$DocFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/docsUI/docs2pdf/controllers/Doc2pdfController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/docsUI/docs2pdf/controllers/Doc2pdfController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/docsUI/docs2pdf/ui/doc2pdfTab.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/docsUI/docs2pdf/ui/doc2pdfTab.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/docs2pdf/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/docs2pdf/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/docs2pdf/controllers/Doc2pdfController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/docs2pdf/controllers/Doc2pdfController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/docs2pdf/controllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/docs2pdf/controllers/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/docs2pdf/controllers/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/docs2pdf/controllers/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/docs2pdf/resources/dark-theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/docs2pdf/resources/dark-theme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/docs2pdf/resources/jfoenix-main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/docs2pdf/resources/jfoenix-main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/docs2pdf/resources/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/docs2pdf/resources/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/docs2pdf/ui/doc2pdfTab.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/docs2pdf/ui/doc2pdfTab.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/docs2pdf/ui/mergepdf.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/docs2pdf/ui/mergepdf.fxml" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -205,6 +73,9 @@
     <ui_properties converted="true" />
     <breakpoint_rules converted="true" />
   </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="JavaFxApplication" />
   </component>
@@ -213,11 +84,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/docs2pdf/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="138">
+              <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="3" selection-start-column="3" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -225,17 +102,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/docs2pdf/controllers/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
+            <state relative-caret-position="-460">
               <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/docs2pdf/controllers/Utils.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="575">
-              <caret line="25" column="36" lean-forward="true" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+              <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -278,8 +155,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/docs2pdf/resources/dark-theme.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6555">
-              <caret line="285" column="1" selection-start-line="281" selection-start-column="17" selection-end-line="285" selection-end-column="1" />
+            <state relative-caret-position="518">
+              <caret line="268" column="21" selection-start-line="268" selection-start-column="21" selection-end-line="268" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -306,7 +183,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>pdfListView</find>
       <find>freshh</find>
       <find>.button-raised</find>
       <find>.</find>
@@ -336,6 +212,7 @@
       <find>system</find>
       <find>system.out</find>
       <find>pdfList</find>
+      <find>libra</find>
     </findStrings>
   </component>
   <component name="FindManager">
@@ -379,6 +256,7 @@
         <option value="$PROJECT_DIR$/src/docs2pdf/controllers/Utils.java" />
         <option value="$PROJECT_DIR$/src/docs2pdf/ui/doc2pdfTab.fxml" />
         <option value="$PROJECT_DIR$/src/docs2pdf/controllers/Doc2pdfController.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -388,7 +266,9 @@
     <option name="width" value="1294" />
     <option name="height" value="1407" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
   </component>
@@ -408,39 +288,7 @@
             <path>
               <item name="docsUI" type="b2602c69:ProjectViewProjectNode" />
               <item name="docsUI" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="docsUI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="docsUI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="docsUI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="docsUI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="docs2pdf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="docsUI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="docsUI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="docs2pdf" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="docsUI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="docsUI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="docs2pdf" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="docsUI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="docsUI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="docs2pdf" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="docsUI" type="b2602c69:ProjectViewProjectNode" />
@@ -472,7 +320,7 @@
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/jacob-1.19/jacob.jar!/" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3218391" />
     <property name="recentsLimit" value="5" />
@@ -609,7 +457,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123269000" />
+    <option name="totallyTimeSpent" value="123907000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -621,7 +469,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
+    <frame x="-8" y="-8" width="2576" height="1416" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.18600954" />
@@ -769,17 +617,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/docs2pdf/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="138">
+          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/docs2pdf/controllers/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
+        <state relative-caret-position="-460">
           <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
         </state>
       </provider>
@@ -802,8 +647,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/docs2pdf/resources/dark-theme.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6555">
-          <caret line="285" column="1" selection-start-line="281" selection-start-column="17" selection-end-line="285" selection-end-column="1" />
+        <state relative-caret-position="518">
+          <caret line="268" column="21" selection-start-line="268" selection-start-column="21" selection-end-line="268" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -827,10 +672,17 @@
     <entry file="file://$PROJECT_DIR$/src/docs2pdf/controllers/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="575">
-          <caret line="25" column="36" lean-forward="true" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+          <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="3" selection-start-column="3" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -906,7 +758,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>jacob</last-edited>
+          <last-edited>com.jfoenix:jfoenix:8.0.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

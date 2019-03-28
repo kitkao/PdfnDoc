@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="docsUI.jar" size="5373082" download="eager" />
+    <jar href="docsUI.jar" size="5372297" download="eager" />
   </resources>
   <jfx:javafx-desc  width="800" height="600" main-class="docs2pdf.Main"  name="docsUI" />
   <update check="background"/>

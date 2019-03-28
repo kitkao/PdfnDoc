@@ -117,7 +117,6 @@ public class Doc2pdfController {
 
     private void word2pdf(List<DocFile> doclist) throws Exception {
         pdfList.clear();
-        List<String> newPdfList = new ArrayList<>();
         Thread convertThread = new Thread(() -> {
             Platform.runLater(() -> convertProgress.setProgress(0.0));
             // Word Dodc to pdf Macro code is 17
@@ -140,14 +139,13 @@ public class Doc2pdfController {
                 Dispatch.call(doc, "Close", false);
                 updateProgress(count, doclist.size());
                 String pdfName = docfile.getName().substring(0, docfile.getName().length() - 4) + ".pdf";
-                newPdfList.add(pdfName);
+                //pdfList is in main FX Thread
+                Platform.runLater(() -> pdfList.add(pdfName));
             }
             app.invoke("Quit", 0);
 
         });
         convertThread.start();
-
-        pdfList = FXCollections.observableArrayList(newPdfList);
     }
 
     private void updateProgress(int count, int size) {

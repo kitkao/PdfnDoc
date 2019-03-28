@@ -20,7 +20,6 @@ public class Main extends Application {
 
         final ObservableList<String> stylesheets = mainScene.getStylesheets();
         stylesheets.addAll(
-//                Main.class.getResource("resources/dark-theme.css").toExternalForm(),
                 Main.class.getResource("resources/jfoenix-main.css").toExternalForm()
         );
 

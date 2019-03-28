@@ -1,40 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.effect.*?>
-<?import javafx.scene.text.*?>
-<?import javafx.scene.control.*?>
-<?import com.jfoenix.controls.*?>
-<?import java.lang.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.Dialog ?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.layout.StackPane?>
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="docs2pdf.controllers.MainController">
-   <children>
-      <JFXTabPane>
-         <tabs>
-            <Tab text="Merge PDF">
-               <content>
-                  <AnchorPane prefHeight="600.0" prefWidth="600.0">
-                     <children>
-                        <JFXButton layoutX="14.0" layoutY="14.0" onAction="#openPdfFolder" prefWidth="200.0" styleClass="button-raised" text="Open PDF Directory" />
-                        <JFXListView fx:id="pdfListView" layoutX="14.0" layoutY="65.0" prefHeight="400.0" prefWidth="538.0" styleClass="pdflistview" />
-                        <JFXButton layoutX="190.0" layoutY="509.0" onAction="#mergePdf" prefHeight="42.0" prefWidth="200.0" styleClass="button-raised" text="Merge" />
-                        <JFXListView fx:id="mergeListView" layoutX="568.0" layoutY="65.0" prefHeight="400.0" prefWidth="218.0" />
-                        <Label layoutX="568.0" layoutY="42.0" text="Selected" />
-                     </children>
-                  </AnchorPane>
-               </content>
-            </Tab>
-            <Tab text="Doc to PDF">
-               <content>
-                  <fx:include fx:id="fooTabPage" source="doc2pdfTab.fxml" />
-               </content>
-            </Tab>
-         </tabs>
-      </JFXTabPane>
-   </children>
+<StackPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+           prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8"
+           fx:controller="docs2pdf.controllers.MainController">
+    <children>
+        <JFXTabPane>
+            <tabs>
+                <Tab text="Merge PDF">
+                    <content>
+                        <fx:include fx:id="mergeTabPage" source="mergeTab.fxml"/>
+                    </content>
+                </Tab>
+                <Tab text="Doc to PDF">
+                    <content>
+                        <fx:include fx:id="doc2pdfTabPage" source="convertTab.fxml"/>
+                    </content>
+                </Tab>
+            </tabs>
+        </JFXTabPane>
+    </children>
 </StackPane>

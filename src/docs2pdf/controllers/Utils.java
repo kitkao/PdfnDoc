@@ -15,21 +15,18 @@ public class Utils {
 
     private static Utils single_instance = null;
 
-
-    private Utils()
-    {
+    private Utils() {
 
     }
 
-    public static Utils getInstance()
-    {
+    public static Utils getInstance() {
         if (single_instance == null)
             single_instance = new Utils();
         return single_instance;
     }
 
-    public File showDirectory (ActionEvent event) {
-        Stage stage = Stage.class.cast(Control.class.cast(event.getSource()).getScene().getWindow());
+    public File showDirectory(ActionEvent event) {
+        Stage stage = (Stage) ((Control) event.getSource()).getScene().getWindow();
         DirectoryChooser directoryChooser = new DirectoryChooser();
         directoryChooser.setInitialDirectory(new File(System.getProperty("user.dir")));
         return directoryChooser.showDialog(stage);

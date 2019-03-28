@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8"
+            fx:controller="docs2pdf.controllers.ConvertController">
+    <children>
+        <JFXButton layoutX="14.0" layoutY="14.0" onAction="#openDocFolder" styleClass="button-raised"
+                   text="Open Doc File"/>
+        <TableView fx:id="docTableView" layoutX="14.0" layoutY="65.0" prefHeight="400.0" prefWidth="574.0">
+            <columns>
+                <TableColumn fx:id="colTick" maxWidth="50.0" minWidth="50.0" prefWidth="50.0"/>
+                <TableColumn fx:id="colName" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" text="File Name"/>
+                <TableColumn fx:id="colSize" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" text="File Size"/>
+                <TableColumn fx:id="colPath" maxWidth="100.0" minWidth="300.0" prefWidth="200.0" text="File Path"/>
+
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+            </columnResizePolicy>
+        </TableView>
+        <JFXButton layoutX="201.0" layoutY="516.0" onAction="#convertDoc" prefWidth="200.0" styleClass="button-raised"
+                   text="Convert"/>
+        <JFXListView fx:id="convertListView" layoutX="598.0" layoutY="65.0" prefHeight="400.0" prefWidth="190.0"/>
+        <Label layoutX="598.0" layoutY="42.0" text="Outcome"/>
+        <JFXProgressBar fx:id="convertProgress" layoutX="601.0" layoutY="477.0" prefHeight="23.0" prefWidth="184.0"
+                        progress="0.0"/>
+    </children>
+</AnchorPane>

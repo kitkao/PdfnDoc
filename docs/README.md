@@ -1,10 +1,11 @@
 
-# Some issues
+# Development path & issues
 
 ## Changed from C# to JAVA
+
 - Was intended to merge docs directly. But formats differs in each docs.
 - Word 2007 could invoke com from :
-    - https://www.microsoft.com/zh-cn/download/details.aspx?id=7
+  - <https://www.microsoft.com/zh-cn/download/details.aspx?id=7>
 
 ```cs
 using Word = Microsoft.Office.Interop.Word;
@@ -94,18 +95,91 @@ public static void Combine_Word(string fileToMerge1, string fileToMerge2, string
 }
 ```
 
+## docx4j package trial
+
+```java
+
+    String docPath  = System.getProperty("user.dir") + "/docs/1-1.doc";
+    String pdfPath  = System.getProperty("user.dir") + "/docs/1-1n.pdf";
+
+
+//        XWPFDocument docx = new XWPFDocument(OPCPackage.openOrCreate(new File(docPath)));
+//        XWPFWordExtractor wx = new XWPFWordExtractor(docx);
+//        String text = wx.getText();
+//        System.out.println("text = "+text);
+
+
+    FileInputStream fin = new FileInputStream(new File(docPath));
+    FileOutputStream fout = new FileOutputStream(new File(pdfPath));
+
+    WordprocessingMLPackage wmlPackage = Doc.convert(fin);
+
+
+    Mapper fontMapper = new IdentityPlusMapper();
+    wmlPackage.setFontMapper(fontMapper);
+
+    fontMapper.getFontMappings().put("华文行楷", PhysicalFonts.getPhysicalFonts().get("STXingkai"));
+    fontMapper.getFontMappings().put("隶书", PhysicalFonts.getPhysicalFonts().get("LiSu"));
+    fontMapper.getFontMappings().put("宋体",PhysicalFonts.getPhysicalFonts().get("SimSun"));
+    fontMapper.getFontMappings().put("微软雅黑",PhysicalFonts.getPhysicalFonts().get("Microsoft Yahei"));
+    fontMapper.getFontMappings().put("黑体",PhysicalFonts.getPhysicalFonts().get("SimHei"));
+    fontMapper.getFontMappings().put("楷体",PhysicalFonts.getPhysicalFonts().get("KaiTi"));
+    fontMapper.getFontMappings().put("新宋体",PhysicalFonts.getPhysicalFonts().get("NSimSun"));
+    fontMapper.getFontMappings().put("华文仿宋", PhysicalFonts.getPhysicalFonts().get("STFangsong"));
+    fontMapper.getFontMappings().put("宋体扩展",PhysicalFonts.getPhysicalFonts().get("simsun-extB"));
+    fontMapper.getFontMappings().put("仿宋",PhysicalFonts.getPhysicalFonts().get("FangSong"));
+    fontMapper.getFontMappings().put("仿宋_GB2312",PhysicalFonts.getPhysicalFonts().get("FangSong_GB2312"));
+    fontMapper.getFontMappings().put("幼圆",PhysicalFonts.getPhysicalFonts().get("YouYuan"));
+    fontMapper.getFontMappings().put("华文宋体",PhysicalFonts.getPhysicalFonts().get("STSong"));
+    fontMapper.getFontMappings().put("华文中宋",PhysicalFonts.getPhysicalFonts().get("STZhongsong"));
+
+//        DOCX4J 2.8.1
+    org.docx4j.convert.out.pdf.PdfConversion c = new org.docx4j.convert.out.pdf.viaXSLFO.Conversion(wmlPackage);
+    //清除pdf页码额外调试信息
+    Docx4jProperties.getProperties().setProperty("docx4j.Log4j.Configurator.disabled", "true");
+    Log4jConfigurator.configure();
+    org.docx4j.convert.out.pdf.viaXSLFO.Conversion.log.setLevel(Level.OFF);
+    c.output(fout, new PdfSettings());
+//        DOCX4J 3.0.1
+//        Docx4J.toPDF(wmlPackage, fout);
+
+    fin.close();
+    fout.close();
+}
+
+
+private WordprocessingMLPackage getMLPackage(FileInputStream iStream) throws Exception{
+
+    PrintStream originalStdout = System.out;
+    System.setOut(new PrintStream(new OutputStream() {
+        public void write(int b) {
+
+        }
+    }));
+
+    WordprocessingMLPackage mlPackage = Doc.convert(iStream);
+
+    System.setOut(originalStdout);
+
+    return mlPackage;
+}
+
+```
+
 ## grammar
+
 - T.class.cast 比 (T) 强制转换好
- 
 - "CLASS".class 等于 getClass()
- 
-- 以下同等，倾向上面的，方便复用
-  - 可以在controller中定义@FXML 
-    ```
+- 以下同等，倾向第一个，方便复用
+  - 可以在controller中定义@FXML
+
+    ```JAVA
     ((Stage) rootPane.getScene().getWindow()).close();
     ```
+
   - 在方法中用event获取stage
-    ```
+
+    ```JAVA
     Stage.class.cast(Control.class.cast(event.getSource()).getScene().getWindow());
     ```
 
@@ -113,7 +187,7 @@ public static void Combine_Word(string fileToMerge1, string fileToMerge2, string
 
 Due to JAVAFX Listview bugs, final choice is selectedItems event.
 
-```
+```JAVA
 pdfListView.setOnMouseClicked(new EventHandler<MouseEvent>(){
     @Override
     public void handle(MouseEvent arg0) {
@@ -163,5 +237,4 @@ pdfListView.setCellFactory(new Callback<ListView<Label>, ListCell<Label>>() {
         return new SelectCell();
     }
 });
- 
 ```

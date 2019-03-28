@@ -30,9 +30,6 @@ import java.util.stream.Collectors;
 
 public class ConvertController {
 
-    Utils su = Utils.getInstance();
-
-
     private ObservableList<DocFile> list = FXCollections.observableArrayList();
     private ObservableList<String> pdfList = FXCollections.observableArrayList();
 
@@ -78,7 +75,7 @@ public class ConvertController {
     @FXML
     private void openDocFolder(ActionEvent event) {
 
-        File selectedDirectory = su.showDirectory(event);
+        File selectedDirectory = Utils.getInstance().showDirectory(event);
         if (selectedDirectory != null) {
             list.clear();
             File[] fileList = selectedDirectory.listFiles();

@@ -26,9 +26,6 @@ import java.util.stream.Collectors;
 
 public class MergeController {
 
-
-    Utils su = Utils.getInstance();
-
     private String pdfFolderName = "";
     private List<String> currentList = new ArrayList<>();
     private List<String> mergeList = new ArrayList<>();
@@ -133,7 +130,7 @@ public class MergeController {
 
     @FXML
     public void openPdfFolder(ActionEvent event) throws IOException {
-        File selectedDirectory = su.showDirectory(event);
+        File selectedDirectory = Utils.getInstance().showDirectory(event);
 
         if (selectedDirectory != null) {
             this.listPdfFiles(selectedDirectory);

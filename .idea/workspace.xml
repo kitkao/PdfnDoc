@@ -2,11 +2,31 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="docsUI:jar" />
+      <artifact name="docsUI" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/docsUI.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/docsUI_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/docsUI_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/docsUI.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/docsUI/docs2pdf/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/docsUI/docs2pdf/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/docsUI/docs2pdf/controllers/Doc2pdfController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/docsUI/docs2pdf/controllers/Doc2pdfController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/docsUI/docs2pdf/controllers/Doc2pdfController$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/docsUI/docs2pdf/controllers/Doc2pdfController$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/docsUI/docs2pdf/controllers/Doc2pdfController$DocFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/docsUI/docs2pdf/controllers/Doc2pdfController$DocFile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/docsUI/docs2pdf/controllers/Doc2pdfController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/docsUI/docs2pdf/controllers/Doc2pdfController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/docsUI/docs2pdf/controllers/MainController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/docsUI/docs2pdf/controllers/MainController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/docsUI/docs2pdf/controllers/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/docsUI/docs2pdf/controllers/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/docsUI/docs2pdf/controllers/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/docsUI/docs2pdf/controllers/Utils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs2pdf/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/docs2pdf/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs2pdf/controllers/Doc2pdfController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/docs2pdf/controllers/Doc2pdfController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs2pdf/controllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/docs2pdf/controllers/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs2pdf/controllers/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/docs2pdf/controllers/Utils.java" afterDir="false" />
+    </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -76,11 +96,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/docs2pdf/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="21" column="80" selection-start-line="21" selection-end-line="22" />
+            <state relative-caret-position="506">
+              <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -91,8 +111,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/docs2pdf/controllers/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="209" column="51" selection-start-line="209" selection-start-column="45" selection-end-line="209" selection-end-column="51" />
+            <state relative-caret-position="267">
+              <caret line="138" selection-start-line="138" selection-end-line="138" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -103,8 +123,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/docs2pdf/controllers/Utils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="280">
+              <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -112,39 +132,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/docs2pdf/controllers/Doc2pdfController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2198">
-              <caret line="97" column="31" selection-start-line="97" selection-start-column="31" selection-end-line="97" selection-end-column="31" />
+            <state relative-caret-position="176">
+              <caret line="119" column="52" lean-forward="true" selection-start-line="119" selection-start-column="52" selection-end-line="119" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3690#3691#0" expanded="true" />
-                <element signature="e#3762#3763#0" expanded="true" />
-                <element signature="e#6134#6135#0" expanded="true" />
-                <element signature="e#6175#6176#0" expanded="true" />
-                <element signature="e#6220#6221#0" expanded="true" />
-                <element signature="e#6263#6264#0" expanded="true" />
-                <element signature="e#6318#6319#0" expanded="true" />
-                <element signature="e#6353#6354#0" expanded="true" />
-                <element signature="e#6388#6389#0" expanded="true" />
-                <element signature="e#6429#6430#0" expanded="true" />
-                <element signature="e#6473#6474#0" expanded="true" />
-                <element signature="e#6516#6517#0" expanded="true" />
-                <element signature="e#6570#6571#0" expanded="true" />
-                <element signature="e#6605#6606#0" expanded="true" />
-                <element signature="e#6640#6641#0" expanded="true" />
-                <element signature="e#6681#6682#0" expanded="true" />
-                <element signature="e#6725#6726#0" expanded="true" />
-                <element signature="e#6768#6769#0" expanded="true" />
-                <element signature="e#6822#6823#0" expanded="true" />
-                <element signature="e#6857#6858#0" expanded="true" />
-                <element signature="e#6892#6893#0" expanded="true" />
-                <element signature="e#6933#6934#0" expanded="true" />
-                <element signature="e#6977#6978#0" expanded="true" />
-                <element signature="e#7020#7021#0" expanded="true" />
-                <element signature="e#7074#7075#0" expanded="true" />
-                <element signature="e#7109#7110#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -154,8 +148,8 @@
         <entry file="file://$PROJECT_DIR$/src/docs2pdf/ui/main.fxml">
           <provider editor-type-id="JavaFX-Scene-Builder" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="39" lean-forward="true" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+            <state relative-caret-position="851">
+              <caret line="37" column="19" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -164,8 +158,8 @@
         <entry file="file://$PROJECT_DIR$/src/docs2pdf/ui/doc2pdfTab.fxml">
           <provider editor-type-id="JavaFX-Scene-Builder" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+            <state relative-caret-position="46">
+              <caret line="2" column="2" selection-end-line="2" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -201,12 +195,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>list-view</find>
-      <find>mul</find>
-      <find>Strea</find>
-      <find>setPdfList</find>
-      <find>pdfList</find>
-      <find>directoryCh</find>
       <find>pdfListView</find>
       <find>freshh</find>
       <find>.button-raised</find>
@@ -229,14 +217,23 @@
       <find>table</find>
       <find>label</find>
       <find>border</find>
-      <find>dia</find>
       <find>dialog</find>
+      <find>dia</find>
+      <find>JFXAlert</find>
+      <find>dial</find>
+      <find>stage</find>
+      <find>system</find>
+      <find>system.out</find>
+      <find>pdfList</find>
     </findStrings>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -257,14 +254,14 @@
         <option value="$PROJECT_DIR$/src/docs2pdf/main.fxml" />
         <option value="$PROJECT_DIR$/src/docs2pdf/Controller.java" />
         <option value="$PROJECT_DIR$/src/docs2pdf/ui/doc2pdf.fxml" />
-        <option value="$PROJECT_DIR$/src/docs2pdf/controllers/Utils.java" />
-        <option value="$PROJECT_DIR$/src/docs2pdf/controllers/MainController.java" />
         <option value="$PROJECT_DIR$/src/docs2pdf/ui/mergepdf.fxml" />
         <option value="$PROJECT_DIR$/src/docs2pdf/resources/jfoenix-main.css" />
-        <option value="$PROJECT_DIR$/src/docs2pdf/controllers/Doc2pdfController.java" />
         <option value="$PROJECT_DIR$/src/docs2pdf/ui/doc2pdfTab.fxml" />
         <option value="$PROJECT_DIR$/src/docs2pdf/ui/main.fxml" />
         <option value="$PROJECT_DIR$/src/docs2pdf/Main.java" />
+        <option value="$PROJECT_DIR$/src/docs2pdf/controllers/MainController.java" />
+        <option value="$PROJECT_DIR$/src/docs2pdf/controllers/Utils.java" />
+        <option value="$PROJECT_DIR$/src/docs2pdf/controllers/Doc2pdfController.java" />
       </list>
     </option>
   </component>
@@ -274,6 +271,7 @@
     <option name="width" value="1294" />
     <option name="height" value="1407" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
   </component>
@@ -289,6 +287,11 @@
             <path>
               <item name="docsUI" type="b2602c69:ProjectViewProjectNode" />
               <item name="docsUI" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="docsUI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="docsUI" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="docsUI" type="b2602c69:ProjectViewProjectNode" />
@@ -326,6 +329,17 @@
               <item name="docsUI" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
+            <path>
+              <item name="docsUI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="docsUI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="jfxrt.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -347,15 +361,15 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553604961372" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553763256932" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/jacob-1.19/jacob.jar!/" />
+    <property name="last_opened_file_path" value="D:/develop/Java/jre1.8.0_201/lib" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3218391" />
     <property name="recentsLimit" value="5" />
-    <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -478,18 +492,29 @@
       <workItem from="1553418576248" duration="11340000" />
       <workItem from="1553512564105" duration="26800000" />
       <workItem from="1553605006847" duration="98000" />
-      <workItem from="1553649621890" duration="1005000" />
+      <workItem from="1553649621890" duration="4285000" />
+      <workItem from="1553684582005" duration="4491000" />
+      <workItem from="1553755913458" duration="4060000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107422000" />
+    <option name="totallyTimeSpent" value="119253000" />
+  </component>
+  <component name="TodoView" selected-index="3">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.17925279" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.18163753" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -502,14 +527,14 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3998441" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32969603" />
       <window_info anchor="bottom" id="Application Servers" order="7" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32969603" />
       <window_info anchor="bottom" id="Problems" order="9" />
       <window_info anchor="bottom" id="Changes" order="10" />
       <window_info anchor="bottom" id="Profiler" order="11" />
-      <window_info anchor="bottom" id="Event Log" order="12" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.32969603" />
+      <window_info anchor="bottom" id="Event Log" order="12" weight="0.32969603" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32917318" />
       <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="15" />
       <window_info anchor="bottom" id="Terminal" order="16" />
@@ -593,13 +618,6 @@
         <state relative-caret-position="-34950" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/META-INF/MANIFEST.MF">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/out/production/docsUI/docs2pdf/main.fxml" />
     <entry file="file://$PROJECT_DIR$/src/docs2pdf/ui/mergepdf.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
@@ -630,13 +648,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/docs2pdf/controllers/Utils.java">
+    <entry file="file://$PROJECT_DIR$/src/docs2pdf/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="506">
+          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/docs2pdf/ui/main.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="851">
+          <caret line="37" column="19" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/docs2pdf/ui/doc2pdfTab.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="2" selection-end-line="2" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -654,72 +695,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/docs2pdf/ui/main.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
+    <entry file="file://$PROJECT_DIR$/src/docs2pdf/controllers/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="39" lean-forward="true" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+        <state relative-caret-position="267">
+          <caret line="138" selection-start-line="138" selection-end-line="138" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/docs2pdf/controllers/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/docs2pdf/controllers/Doc2pdfController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2198">
-          <caret line="97" column="31" selection-start-line="97" selection-start-column="31" selection-end-line="97" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3690#3691#0" expanded="true" />
-            <element signature="e#3762#3763#0" expanded="true" />
-            <element signature="e#6134#6135#0" expanded="true" />
-            <element signature="e#6175#6176#0" expanded="true" />
-            <element signature="e#6220#6221#0" expanded="true" />
-            <element signature="e#6263#6264#0" expanded="true" />
-            <element signature="e#6318#6319#0" expanded="true" />
-            <element signature="e#6353#6354#0" expanded="true" />
-            <element signature="e#6388#6389#0" expanded="true" />
-            <element signature="e#6429#6430#0" expanded="true" />
-            <element signature="e#6473#6474#0" expanded="true" />
-            <element signature="e#6516#6517#0" expanded="true" />
-            <element signature="e#6570#6571#0" expanded="true" />
-            <element signature="e#6605#6606#0" expanded="true" />
-            <element signature="e#6640#6641#0" expanded="true" />
-            <element signature="e#6681#6682#0" expanded="true" />
-            <element signature="e#6725#6726#0" expanded="true" />
-            <element signature="e#6768#6769#0" expanded="true" />
-            <element signature="e#6822#6823#0" expanded="true" />
-            <element signature="e#6857#6858#0" expanded="true" />
-            <element signature="e#6892#6893#0" expanded="true" />
-            <element signature="e#6933#6934#0" expanded="true" />
-            <element signature="e#6977#6978#0" expanded="true" />
-            <element signature="e#7020#7021#0" expanded="true" />
-            <element signature="e#7074#7075#0" expanded="true" />
-            <element signature="e#7109#7110#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/docs2pdf/controllers/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="209" column="51" selection-start-line="209" selection-start-column="45" selection-end-line="209" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/docs2pdf/ui/doc2pdfTab.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/docs2pdf/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="21" column="80" selection-start-line="21" selection-end-line="22" />
+        <state relative-caret-position="176">
+          <caret line="119" column="52" lean-forward="true" selection-start-line="119" selection-start-column="52" selection-end-line="119" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -733,18 +732,17 @@
         <settings>
           <artifact-editor>
             <show-content>
-              <type id="library" />
               <type id="jpa-descriptors" />
               <type id="javaee-facet-resources" />
+              <type id="library" />
               <type id="artifact" />
             </show-content>
           </artifact-editor>
-          <last-edited>docsUI:jar</last-edited>
+          <last-edited>docsUI</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.3218391" />
-                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -775,7 +773,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.8</last-edited>
+          <last-edited>1.8_x86</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

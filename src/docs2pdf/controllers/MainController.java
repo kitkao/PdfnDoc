@@ -5,22 +5,15 @@ import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.pdf.PdfCopy;
 import com.itextpdf.text.pdf.PdfReader;
 import com.jfoenix.controls.*;
-import javafx.beans.property.SimpleBooleanProperty;
-import javafx.beans.property.SimpleObjectProperty;
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.value.ObservableValue;
-import javafx.collections.FXCollections;
 import javafx.collections.ListChangeListener;
-import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.*;
+import javafx.scene.control.Control;
 import javafx.scene.control.Label;
-import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.stage.DirectoryChooser;
+import javafx.scene.control.SelectionMode;
+import javafx.scene.control.TabPane;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
-import javafx.util.Callback;
 import org.apache.commons.io.FilenameUtils;
 
 import java.awt.*;
@@ -41,16 +34,17 @@ public class MainController {
 
 
     // Inject tab content.
-    @FXML private TabPane doc2pdfTab;
+    @FXML
+    private TabPane doc2pdfTab;
     // Inject controller
-    @FXML private Doc2pdfController doc2pdfController;
+    @FXML
+    private Doc2pdfController doc2pdfController;
 
 
     @FXML
     private JFXListView<Label> pdfListView;
     @FXML
     private JFXListView<Label> mergeListView;
-
 
 
     public String getPdfFolderName() {
@@ -97,9 +91,6 @@ public class MainController {
                 Label selectedLable = pdfListView.getSelectionModel().getSelectedItem();
                 List<Integer> selectedIndices = pdfListView.getSelectionModel().getSelectedIndices();
                 int selectedSize = selectedIndices.size();
-                System.out.println(pdfListView.getSelectionModel().getSelectedIndices());
-                System.out.println(selectedLables);
-                System.out.println(selectedLable);
 
                 if (selectedLables.isEmpty()) {
                     List<String> currentList = new ArrayList<>();
@@ -110,54 +101,41 @@ public class MainController {
                     currentList.add(selectedLables.get(0).getText());
                     setMergeList(currentList);
                 } else if (mergeList.contains(selectedLable.getText())) {
-                    if (selectedIndices.size() == mergeList.size() - 1){
-                        System.out.println("-0");
+                    if (selectedIndices.size() == mergeList.size() - 1) {
                         List<String> mergeList = getMergeList();
                         mergeList.remove(selectedLable.getText());
                         setMergeList(mergeList);
                     } else {
-                        System.out.println("-1");
                         List<String> currentList = new ArrayList<>();
-                        for(Label sl: selectedLables) {
+                        for (Label sl : selectedLables) {
                             currentList.add(sl.getText());
                         }
                         setMergeList(currentList);
                     }
                 } else {
                     if (selectedIndices.size() == mergeList.size() + 1) {
-                        System.out.println("+0");
                         List<String> mergeList = getMergeList();
                         mergeList.add(selectedLable.getText());
                         setMergeList(mergeList);
                     } else {
-                        System.out.println("+1");
                         List<String> currentList = new ArrayList<>();
-                        for(Label sl: selectedLables) {
+                        for (Label sl : selectedLables) {
                             currentList.add(sl.getText());
                         }
                         setMergeList(currentList);
                     }
 
                 }
-
                 mergeListView.getItems().clear();
-                for (String m: mergeList) {
+                for (String m : mergeList) {
                     Label label = new Label(m);
                     mergeListView.getItems().add(label);
                 }
-
-                System.out.println(getMergeList());
-                System.out.println();
             }
         });
 
 
-
-
     }
-
-
-
 
 
     @FXML
@@ -167,23 +145,21 @@ public class MainController {
         if (selectedDirectory != null) {
             this.listPdfFiles(selectedDirectory);
         } else {
-            System.out.println("Did not select a directory");
+            Stage stage = Stage.class.cast(Control.class.cast(event.getSource()).getScene().getWindow());
+            Utils.getInstance().showDialog(stage, "Something...not proper", "Did not select a directory");
         }
     }
 
     public void listPdfFiles(File selectedDirectory) {
 
         pdfListView.getItems().clear();
-
         this.setPdfFolderName(selectedDirectory.getPath());
-        System.out.println(this.getPdfFolderName());
 
         File[] fileList = selectedDirectory.listFiles();
         List<File> flist = new ArrayList<>();
         for (File f : fileList) {
             if (FilenameUtils.getExtension(f.getPath()).equals("pdf")) {
                 flist.add(f);
-                System.out.println(f.getName());
             }
         }
 
@@ -198,20 +174,11 @@ public class MainController {
     @FXML
     public void mergePdf(ActionEvent event) throws IOException, DocumentException {
 
-        Stage stage = Stage.class.cast(Control.class.cast(event.getSource()).getScene().getWindow());
-
+        Stage stage = (Stage) ((Control) event.getSource()).getScene().getWindow();
         if (this.getMergeList().isEmpty()) {
-            JFXAlert alert = new JFXAlert(stage);
-            JFXDialogLayout layout = new JFXDialogLayout();
-            layout.setHeading(new Label("有点不对"));
-            layout.setBody(new Label("合并文件列表："
-                    + " 为空"));
-            JFXButton closeButton = new JFXButton("好的");
-            closeButton.getStyleClass().add("dialog-accept");
-            closeButton.setOnAction(e -> alert.hideWithAnimation());
-            layout.setActions(closeButton);
-            alert.setContent(layout);
-            alert.show();
+            String title = "Something...not proper";
+            String info = "Files list to merge:" +  " is empty";
+            Utils.getInstance().showDialog(stage, title, info);
             return;
         }
 
@@ -221,10 +188,6 @@ public class MainController {
             File pdfFile = new File(this.getPdfFolderName() + "\\" + pdfName);
             pdfList.add(pdfFile);
         }
-
-        System.out.println("merging...");
-        System.out.println(System.getProperty("user.dir"));
-
 
         FileChooser fileChooser = new FileChooser();
         fileChooser.setInitialDirectory(new File(System.getProperty("user.dir")));
@@ -236,22 +199,15 @@ public class MainController {
         if (newFile != null) {
             Document document = new Document();
             PdfCopy copy;
-
             List<String> filePathList = pdfList.stream().map(v -> v.getAbsolutePath()).collect(Collectors.toList());
-
             // If the new file's name is the same to an existing one
             if (filePathList.contains(newFile.getAbsolutePath())) {
-                System.out.println("new");
-                System.out.println(newFile.getAbsolutePath());
                 String newFilePath = newFile.getAbsolutePath().substring(0, newFile.getAbsolutePath().length() - 4) + "-new.pdf";
-                System.out.println(newFilePath);
-                copy = new PdfCopy(document, new FileOutputStream(newFilePath));
                 copy = new PdfCopy(document, new FileOutputStream(newFile.getAbsolutePath()));
             } else {
                 // File name not exists
                 copy = new PdfCopy(document, new FileOutputStream(newFile.getAbsolutePath()));
             }
-            ;
             copy.setMergeFields();
             document.open();
             List<PdfReader> readers = new ArrayList<>();
@@ -259,7 +215,6 @@ public class MainController {
             for (File pdf : pdfList) {
                 readers.add(new PdfReader(pdf.getAbsolutePath()));
             }
-
 
             for (PdfReader reader : readers) {
                 copy.addDocument(reader);
@@ -273,31 +228,25 @@ public class MainController {
             }
 
             Desktop.getDesktop().open(newFile);
-
-            System.out.println("merged.");
-
             this.listPdfFiles(new File(this.getPdfFolderName()));
         } else {
-            System.out.println("cancel merge.");
+            Utils.getInstance().showDialog(stage, "Cancel merging", "New file not selected.");
         }
 
 
     }
 
 
-    // getIndices return array in increasment order : [2, 5, 9 ,10, 13]
-    boolean areConsecutive(int arr[], int n)
-    {
+    // getIndices return array in increment order : [2, 5, 9 ,10, 13]
+    boolean areConsecutive(int[] arr, int n) {
         if (n < 1)
             return false;
         int min = arr[0];
         int max = arr[arr.length - 1];
-        if (max - min + 1 == n)
-        {
-            boolean visited[] = new boolean[n];
+        if (max - min + 1 == n) {
+            boolean[] visited = new boolean[n];
             int i;
-            for (i = 0; i < n; i++)
-            {
+            for (i = 0; i < n; i++) {
                 if (visited[arr[i] - min] != false)
                     return false;
                 visited[arr[i] - min] = true;
@@ -306,7 +255,6 @@ public class MainController {
         }
         return false;
     }
-
 
 
 }

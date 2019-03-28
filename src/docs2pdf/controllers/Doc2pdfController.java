@@ -15,13 +15,16 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Control;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.stage.Stage;
 import javafx.util.Callback;
 import org.apache.commons.io.FilenameUtils;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -83,13 +86,13 @@ public class Doc2pdfController {
             for (File f : fileList) {
                 if (FilenameUtils.getExtension(f.getPath()).equals("doc")) {
                     list.add(new DocFile(false, f.getName(), f.getAbsolutePath(),
-                            Long.toString(f.length() / 1024) + "kb"));
+                            f.length() / 1024 + "kb"));
                 }
             }
         } else {
-            System.out.println("Did not select a directory");
+            Stage stage = (Stage) ((Control) event.getSource()).getScene().getWindow();
+            Utils.getInstance().showDialog(stage, "Something...not proper", "Did not select a directory");
         }
-
     }
 
 
@@ -97,33 +100,33 @@ public class Doc2pdfController {
     private void convertDoc(ActionEvent event) {
         List<DocFile> selectedItems = list.stream().filter(item -> item.isTick()).collect(Collectors.toList());
         if (selectedItems.isEmpty()) {
-            System.out.println("no docs");
+            Stage stage = (Stage) ((Control) event.getSource()).getScene().getWindow();
+            Utils.getInstance().showDialog(stage, "Something...not proper", "Doc files to convert is empty.");
 
         } else {
-            Platform.runLater(new Runnable() {
-                @Override
-                public void run() {
-                    convertProgress.setProgress(0.0);
-                }
-            });
-            word2pdf(selectedItems);
+
+            try {
+                word2pdf(selectedItems);
+            } catch (Exception e) {
+                Stage stage = (Stage) ((Control) event.getSource()).getScene().getWindow();
+                Utils.getInstance().showDialog(stage, "Some exceptions", "e.getMessage()");
+            }
         }
 
     }
 
-    private void word2pdf(List<DocFile> doclist) {
-
-        // word保存为pdf格式宏，值为17
-        int wdFormatPDF = 17;
-
-        try {
+    private void word2pdf(List<DocFile> doclist) throws Exception {
+        pdfList.clear();
+        List<String> newPdfList = new ArrayList<>();
+        Thread convertThread = new Thread(() -> {
+            Platform.runLater(() -> convertProgress.setProgress(0.0));
+            // Word Dodc to pdf Macro code is 17
+            int word2pdfMacroCode = 17;
             ActiveXComponent app = new ActiveXComponent("KWPS.Application");
-            System.out.println("开始转化Word为PDF...");
-
             app.setProperty("Visible", new Variant(false));
-            app.setProperty("AutomationSecurity", new Variant(3));
+            //Some version of wps can's disanle macro
+            //app.setProperty("AutomationSecurity", new Variant(3));
             Dispatch docs = app.getProperty("Documents").toDispatch();
-            // 调用Documents对象中Open方法打开文档，并返回打开的文档对象Document
 
             Iterator iterator = doclist.iterator();
             int count = 0;
@@ -133,37 +136,25 @@ public class Doc2pdfController {
                 String inputFile = docfile.getPath();
                 String pdfFile = inputFile.substring(0, inputFile.length() - 4) + ".pdf";
                 Dispatch doc = Dispatch.call(docs, "Open", inputFile, false, true).toDispatch();
-                Dispatch.call(doc, "ExportAsFixedFormat", pdfFile, wdFormatPDF);
-                System.out.println(doc);
+                Dispatch.call(doc, "ExportAsFixedFormat", pdfFile, word2pdfMacroCode);
                 Dispatch.call(doc, "Close", false);
-
                 updateProgress(count, doclist.size());
-                String pdfName=docfile.getName().substring(0, docfile.getName().length() - 4) + ".pdf";
-                pdfList.add(pdfName);
-
+                String pdfName = docfile.getName().substring(0, docfile.getName().length() - 4) + ".pdf";
+                newPdfList.add(pdfName);
             }
-
             app.invoke("Quit", 0);
 
+        });
+        convertThread.start();
 
-        } catch (Exception e) {
-            System.out.println(e);
-        }
-
+        pdfList = FXCollections.observableArrayList(newPdfList);
     }
 
     private void updateProgress(int count, int size) {
-        Platform.runLater(new Runnable() {
-            @Override
-            public void run() {
-                convertProgress.setProgress((double) count / (double) size);
-            }
-        });
+        Platform.runLater(() -> convertProgress.setProgress((double) count / (double) size));
     }
 
-
     public class DocFile {
-
         private final SimpleBooleanProperty tick;
         private final SimpleStringProperty name;
         private final SimpleStringProperty path;

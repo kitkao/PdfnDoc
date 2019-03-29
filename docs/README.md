@@ -97,6 +97,8 @@ public static void Combine_Word(string fileToMerge1, string fileToMerge2, string
 
 ## docx4j package trial
 
+docx4j differs in 2.8 and 3.0 version.
+
 ```java
 
     String docPath  = System.getProperty("user.dir") + "/docs/1-1.doc";

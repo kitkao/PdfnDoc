@@ -17,12 +17,17 @@
 
 ## Notes
 
-IDE: Intellij IDEA
+* IDE: Intellij IDEA
+* Env: Jdk 1.8
+* Packages:
+  * itextpdf: 5.5
+  * jocab: 1.19
+  * jphonix: 8.0
 
 * generate jar:
   * JAR
   * define x86/x64 project jdk for platforms
-* generate exe: 
+* generate exe:
   * JavaFX applications
   * use x84 IDEA launcher
   * define x86/x64 project jdk for platforms

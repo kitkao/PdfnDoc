@@ -51,17 +51,14 @@ public static void Combine_Word(string fileToMerge1, string fileToMerge2, string
     Word._Application wordApplication = new Word.Application();
     try
     {
-        // Create a new file based on our template
         Word._Document wordDocument = wordApplication.Documents.Open(
                                     fileToMerge1
                                     , ref missing
                                     , ref missing
                                     , ref missing
                                     , ref missing);
-        // Make a Word selection object.
         Word.Selection selection = wordApplication.Selection;
         wordDocument.Merge(fileToMerge2, ref missing, ref missing, ref missing, ref missing);
-        // Save the document to it's output file.
         wordDocument.SaveAs(
                     ref outputFile
                     , ref missing
@@ -79,17 +76,14 @@ public static void Combine_Word(string fileToMerge1, string fileToMerge2, string
                     , ref missing
                     , ref missing
                     , ref missing);
-        // Clean up!
         wordDocument = null;
     }
     catch (Exception ex)
     {
-        //I didn't include a default error handler so i'm just throwing the error
         throw ex;
     }
     finally
     {
-        // Finally, Close our Word application
         wordApplication.Quit(ref missing, ref missing, ref missing);
     }
 }
@@ -160,9 +154,7 @@ private WordprocessingMLPackage getMLPackage(FileInputStream iStream) throws Exc
     }));
 
     WordprocessingMLPackage mlPackage = Doc.convert(iStream);
-
     System.setOut(originalStdout);
-
     return mlPackage;
 }
 

@@ -5,20 +5,17 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml"
-            xmlns="http://javafx.com/javafx"
+<AnchorPane xmlns:fx="http://javafx.com/fxml" xmlns="http://javafx.com/javafx"
             fx:controller="docs2pdf.controllers.MergeController"
             prefHeight="600.0" prefWidth="800.0">
-    <AnchorPane prefHeight="600.0" prefWidth="800.0">
-        <children>
-            <JFXButton layoutX="14.0" layoutY="14.0" onAction="#openPdfFolder" prefWidth="200.0"
-                       styleClass="button-raised" text="Open PDF Directory"/>
-            <JFXListView fx:id="pdfListView" layoutX="14.0" layoutY="65.0" prefHeight="400.0" prefWidth="538.0"
-                         styleClass="pdflistview"/>
-            <JFXButton layoutX="190.0" layoutY="509.0" onAction="#mergePdf" prefHeight="42.0" prefWidth="200.0"
-                       styleClass="button-raised" text="Merge"/>
-            <JFXListView fx:id="mergeListView" layoutX="568.0" layoutY="65.0" prefHeight="400.0" prefWidth="218.0"/>
-            <Label layoutX="568.0" layoutY="42.0" text="Selected"/>
-        </children>
-    </AnchorPane>
+    <children>
+        <JFXButton layoutX="14.0" layoutY="14.0" onAction="#openPdfFolder" prefWidth="200.0"
+                   styleClass="button-raised" text="Open PDF Directory"/>
+        <JFXListView fx:id="pdfListView" layoutX="14.0" layoutY="65.0" prefHeight="400.0" prefWidth="538.0"
+                     styleClass="pdflistview"/>
+        <JFXButton layoutX="190.0" layoutY="509.0" onAction="#mergePdf" prefHeight="42.0" prefWidth="200.0"
+                   styleClass="button-raised" text="Merge"/>
+        <JFXListView fx:id="mergeListView" layoutX="568.0" layoutY="65.0" prefHeight="400.0" prefWidth="218.0"/>
+        <Label layoutX="568.0" layoutY="42.0" text="Selected"/>
+    </children>
 </AnchorPane>

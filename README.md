@@ -1,8 +1,10 @@
 # UI
 
-## Doc rules
+## Purpose
 
-<https://github.com/DavidAnson/markdownlint/blob/v0.12.0/doc/Rules.md>
+To merge relative pdfs into a booklet.
+To handle doc 2003 files.
+To try JavaFX.
 
 ## Design
 
@@ -34,7 +36,7 @@
 
 ## Outcome
 
-* JavaFX leverage css is good.
-* But JavaFX has some bugs. I would choose electron next time.
+* JavaFX leverages css is good.
+* But JavaFX has some minor bugs, not well maintained.
 
 ## License

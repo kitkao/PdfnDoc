@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/docsUI.iml" filepath="$PROJECT_DIR$/docsUI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PdfnDoc.iml" filepath="$PROJECT_DIR$/PdfnDoc.iml" />
     </modules>
   </component>
 </project>

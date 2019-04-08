@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 <AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8"
-            prefHeight="600.0" prefWidth="800.0" fx:controller="docs2pdf.controllers.ConvertController">
+            prefHeight="600.0" prefWidth="800.0" fx:controller="PdfnDoc.controllers.ConvertController">
     <children>
         <JFXButton layoutX="14.0" layoutY="14.0" onAction="#openDocFolder" styleClass="button-raised"
                    text="Open Doc File"/>

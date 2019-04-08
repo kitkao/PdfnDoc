@@ -1,4 +1,4 @@
-package docs2pdf.controllers;
+package PdfnDoc.controllers;
 
 import com.jfoenix.controls.JFXAlert;
 import com.jfoenix.controls.JFXButton;

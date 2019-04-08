@@ -1,4 +1,4 @@
-package docs2pdf.controllers;
+package PdfnDoc.controllers;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.TabPane;

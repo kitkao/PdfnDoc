@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 <AnchorPane xmlns:fx="http://javafx.com/fxml" xmlns="http://javafx.com/javafx"
-            fx:controller="docs2pdf.controllers.MergeController"
+            fx:controller="PdfnDoc.controllers.MergeController"
             prefHeight="600.0" prefWidth="800.0">
     <children>
         <JFXButton layoutX="14.0" layoutY="14.0" onAction="#openPdfFolder" prefWidth="200.0"

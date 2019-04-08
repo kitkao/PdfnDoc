@@ -1,4 +1,4 @@
-package docs2pdf.controllers;
+package PdfnDoc.controllers;
 
 import com.jacob.activeX.ActiveXComponent;
 import com.jacob.com.Dispatch;
@@ -48,7 +48,6 @@ public class ConvertController {
     @FXML
     private TableColumn<DocFile, String> colSize;
 
-
     @FXML
     protected void initialize() {
         colTick.setCellValueFactory(new Callback<TableColumn.CellDataFeatures<DocFile, JFXCheckBox>, ObservableValue<JFXCheckBox>>() {
@@ -91,35 +90,31 @@ public class ConvertController {
         }
     }
 
-
     @FXML
     private void convertDoc(ActionEvent event) {
         List<DocFile> selectedItems = list.stream().filter(item -> item.isTick()).collect(Collectors.toList());
         if (selectedItems.isEmpty()) {
             Stage stage = (Stage) ((Control) event.getSource()).getScene().getWindow();
             Utils.getInstance().showDialog(stage, "Something...not proper", "Doc files to convert is empty.");
-
         } else {
-
             try {
-                word2pdf(selectedItems);
+                doc2Pdf(selectedItems);
             } catch (Exception e) {
                 Stage stage = (Stage) ((Control) event.getSource()).getScene().getWindow();
                 Utils.getInstance().showDialog(stage, "Some exceptions", "e.getMessage()");
             }
         }
-
     }
 
-    private void word2pdf(List<DocFile> doclist) throws Exception {
+    private void doc2Pdf(List<DocFile> doclist) throws Exception {
         pdfList.clear();
         Thread convertThread = new Thread(() -> {
             Platform.runLater(() -> convertProgress.setProgress(0.0));
-            // Word Dodc to pdf Macro code is 17
-            int word2pdfMacroCode = 17;
+            // Word Doc format to pdf Macro code is 17
+            int doc2PdfMacroCode = 17;
             ActiveXComponent app = new ActiveXComponent("KWPS.Application");
             app.setProperty("Visible", new Variant(false));
-            //Some version of wps can's disanle macro
+            //Some version of wps can't use  macro
             //app.setProperty("AutomationSecurity", new Variant(3));
             Dispatch docs = app.getProperty("Documents").toDispatch();
 
@@ -131,7 +126,7 @@ public class ConvertController {
                 String inputFile = docfile.getPath();
                 String pdfFile = inputFile.substring(0, inputFile.length() - 4) + ".pdf";
                 Dispatch doc = Dispatch.call(docs, "Open", inputFile, false, true).toDispatch();
-                Dispatch.call(doc, "ExportAsFixedFormat", pdfFile, word2pdfMacroCode);
+                Dispatch.call(doc, "ExportAsFixedFormat", pdfFile, doc2PdfMacroCode);
                 Dispatch.call(doc, "Close", false);
                 updateProgress(count, doclist.size());
                 String pdfName = docfile.getName().substring(0, docfile.getName().length() - 4) + ".pdf";

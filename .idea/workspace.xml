@@ -2,11 +2,26 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="docsUI" />
+      <artifact name="docsUI:jar" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="fix thread" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="fix thread">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docsUI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PdfnDoc.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs2pdf/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PdfnDoc/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs2pdf/controllers/ConvertController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PdfnDoc/controllers/ConvertController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs2pdf/controllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PdfnDoc/controllers/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs2pdf/controllers/MergeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PdfnDoc/controllers/MergeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs2pdf/controllers/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PdfnDoc/controllers/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs2pdf/resources/jfoenix-main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/PdfnDoc/resources/jfoenix-main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs2pdf/ui/convertTab.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/PdfnDoc/ui/convertTab.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs2pdf/ui/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/PdfnDoc/ui/main.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs2pdf/ui/mergeTab.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/PdfnDoc/ui/mergeTab.fxml" afterDir="false" />
+    </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -78,7 +93,42 @@
     <favorites_list name="JavaFxApplication" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/PdfnDoc/controllers/MergeController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5083">
+              <caret line="229" column="53" selection-start-line="229" selection-start-column="53" selection-end-line="229" selection-end-column="53" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/PdfnDoc/ui/main.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="14" column="81" selection-start-line="14" selection-start-column="81" selection-end-line="14" selection-end-column="81" />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/PdfnDoc/controllers/ConvertController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2461">
+              <caret line="133" column="62" selection-start-line="133" selection-start-column="62" selection-end-line="133" selection-end-column="62" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -91,13 +141,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>freshh</find>
-      <find>.button-raised</find>
-      <find>.</find>
-      <find>tab</find>
-      <find>button</find>
-      <find>TAB</find>
-      <find>listview</find>
       <find>listvi</find>
       <find>list</find>
       <find>pdflist</find>
@@ -121,6 +164,13 @@
       <find>system.out</find>
       <find>pdfList</find>
       <find>libra</find>
+      <find>currentList</find>
+      <find>exce</find>
+      <find>newFilePath</find>
+      <find>mergePdf</find>
+      <find>listPdfFiles</find>
+      <find>excep</find>
+      <find>desktop</find>
     </findStrings>
   </component>
   <component name="FindManager">
@@ -167,10 +217,12 @@
         <option value="$PROJECT_DIR$/src/docs2pdf/controllers/Utils.java" />
         <option value="$PROJECT_DIR$/src/docs2pdf/ui/main.fxml" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/docs2pdf/controllers/ConvertController.java" />
-        <option value="$PROJECT_DIR$/src/docs2pdf/controllers/MergeController.java" />
         <option value="$PROJECT_DIR$/src/docs2pdf/ui/mergeTab.fxml" />
         <option value="$PROJECT_DIR$/src/docs2pdf/ui/convertTab.fxml" />
+        <option value="$PROJECT_DIR$/src/docs2pdf/controllers/ConvertController.java" />
+        <option value="$PROJECT_DIR$/src/docs2pdf/controllers/MergeController.java" />
+        <option value="$PROJECT_DIR$/src/PdfnDoc/controllers/MergeController.java" />
+        <option value="$PROJECT_DIR$/src/PdfnDoc/ui/main.fxml" />
       </list>
     </option>
   </component>
@@ -191,8 +243,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -225,32 +277,28 @@
               <item name="docsUI" type="b2602c69:ProjectViewProjectNode" />
               <item name="docsUI" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="docs2pdf" type="462c0819:PsiDirectoryNode" />
+              <item name="PdfnDoc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="docsUI" type="b2602c69:ProjectViewProjectNode" />
               <item name="docsUI" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="docs2pdf" type="462c0819:PsiDirectoryNode" />
+              <item name="PdfnDoc" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="docsUI" type="b2602c69:ProjectViewProjectNode" />
               <item name="docsUI" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="docs2pdf" type="462c0819:PsiDirectoryNode" />
+              <item name="PdfnDoc" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="docsUI" type="b2602c69:ProjectViewProjectNode" />
               <item name="docsUI" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="docs2pdf" type="462c0819:PsiDirectoryNode" />
+              <item name="PdfnDoc" type="462c0819:PsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="docsUI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -277,7 +325,7 @@
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/jacob-1.19/jacob.jar!/" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3218391" />
     <property name="recentsLimit" value="5" />
@@ -321,12 +369,12 @@
       </method>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="docs2pdf.Main" />
-      <module name="docsUI" />
+      <option name="MAIN_CLASS_NAME" value="PdfnDoc.Main" />
+      <module name="PdfnDoc" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="docs2pdf.controllers.*" />
+          <option name="PATTERN" value="PdfnDoc.controllers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -413,11 +461,13 @@
       <workItem from="1553797596511" duration="754000" />
       <workItem from="1554625741579" duration="198000" />
       <workItem from="1554630656278" duration="122000" />
+      <workItem from="1554706020344" duration="7164000" />
+      <workItem from="1554713509721" duration="440000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130160000" />
+    <option name="totallyTimeSpent" value="137764000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -431,7 +481,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.19077902" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.19395867" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -440,7 +490,7 @@
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32969603" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.21590023" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.25643024" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3998441" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -451,7 +501,7 @@
       <window_info anchor="bottom" id="Changes" order="10" />
       <window_info anchor="bottom" id="Profiler" order="11" />
       <window_info anchor="bottom" id="Event Log" order="12" weight="0.32969603" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.32917318" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.3289166" />
       <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="15" />
       <window_info anchor="bottom" id="Terminal" order="16" />
@@ -603,7 +653,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/docs2pdf/resources/main.css" />
     <entry file="file://$PROJECT_DIR$/src/docs2pdf/resources/dark-theme.css" />
-    <entry file="file://$PROJECT_DIR$/src/docs2pdf/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/PdfnDoc/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
@@ -623,7 +673,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/docs2pdf/resources/jfoenix-main.css">
+    <entry file="file://$PROJECT_DIR$/src/PdfnDoc/resources/jfoenix-main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1186">
           <caret line="166" selection-start-line="166" selection-end-line="166" />
@@ -640,41 +690,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/docs2pdf/controllers/ConvertController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/docs2pdf/controllers/MergeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1186">
-          <caret line="132" column="52" selection-start-line="132" selection-start-column="52" selection-end-line="132" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/docs2pdf/controllers/Utils.java">
+    <entry file="file://$PROJECT_DIR$/src/PdfnDoc/controllers/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/docs2pdf/ui/main.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
@@ -691,7 +713,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/docs2pdf/controllers/MainController.java">
+    <entry file="file://$PROJECT_DIR$/src/PdfnDoc/controllers/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
@@ -701,22 +723,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/docs2pdf/ui/convertTab.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
+    <entry file="file://$PROJECT_DIR$/src/PdfnDoc/ui/convertTab.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="8" column="78" selection-start-line="8" selection-start-column="78" selection-end-line="8" selection-end-column="78" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/docs2pdf/ui/mergeTab.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
+    <entry file="file://$PROJECT_DIR$/src/PdfnDoc/ui/mergeTab.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2484" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PdfnDoc/controllers/ConvertController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2461">
+          <caret line="133" column="62" selection-start-line="133" selection-start-column="62" selection-end-line="133" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PdfnDoc/ui/main.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="81" selection-start-line="14" selection-start-column="81" selection-end-line="14" selection-end-column="81" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PdfnDoc/controllers/MergeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5083">
+          <caret line="229" column="53" selection-start-line="229" selection-start-column="53" selection-end-line="229" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -729,15 +784,16 @@
             <show-content>
               <type id="library" />
               <type id="javaee-facet-resources" />
-              <type id="artifact" />
               <type id="jpa-descriptors" />
+              <type id="artifact" />
             </show-content>
           </artifact-editor>
-          <last-edited>docsUI</last-edited>
+          <last-edited>docsUI:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.3218391" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>

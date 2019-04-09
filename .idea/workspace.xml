@@ -7,20 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="fix thread">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_apache_pdfbox_pdfbox_2_0_14.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsUI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PdfnDoc.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/docs2pdf/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PdfnDoc/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/docs2pdf/controllers/ConvertController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PdfnDoc/controllers/ConvertController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/docs2pdf/controllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PdfnDoc/controllers/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/docs2pdf/controllers/MergeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PdfnDoc/controllers/MergeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/docs2pdf/controllers/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PdfnDoc/controllers/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/docs2pdf/resources/jfoenix-main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/PdfnDoc/resources/jfoenix-main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/docs2pdf/ui/convertTab.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/PdfnDoc/ui/convertTab.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/docs2pdf/ui/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/PdfnDoc/ui/main.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/docs2pdf/ui/mergeTab.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/PdfnDoc/ui/mergeTab.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PdfnDoc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PdfnDoc.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PdfnDoc/controllers/ConvertController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PdfnDoc/controllers/ConvertController.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -94,11 +85,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PdfnDoc/controllers/MergeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5083">
-              <caret line="229" column="53" selection-start-line="229" selection-start-column="53" selection-end-line="229" selection-end-column="53" />
+            <state relative-caret-position="292">
+              <caret line="234" column="87" selection-start-line="234" selection-start-column="73" selection-end-line="234" selection-end-column="87" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -116,11 +107,11 @@
           <provider editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/PdfnDoc/controllers/ConvertController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2461">
-              <caret line="133" column="62" selection-start-line="133" selection-start-column="62" selection-end-line="133" selection-end-column="62" />
+            <state relative-caret-position="296">
+              <caret line="101" column="42" selection-start-line="101" selection-start-column="42" selection-end-line="101" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -141,7 +132,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>listvi</find>
       <find>list</find>
       <find>pdflist</find>
       <find>FXCollections</find>
@@ -171,6 +161,7 @@
       <find>listPdfFiles</find>
       <find>excep</find>
       <find>desktop</find>
+      <find>e.getMessage()</find>
     </findStrings>
   </component>
   <component name="FindManager">
@@ -223,6 +214,8 @@
         <option value="$PROJECT_DIR$/src/docs2pdf/controllers/MergeController.java" />
         <option value="$PROJECT_DIR$/src/PdfnDoc/controllers/MergeController.java" />
         <option value="$PROJECT_DIR$/src/PdfnDoc/ui/main.fxml" />
+        <option value="$PROJECT_DIR$/src/PdfnDoc/controllers/Pdf2DocController.java" />
+        <option value="$PROJECT_DIR$/src/PdfnDoc/controllers/ConvertController.java" />
       </list>
     </option>
   </component>
@@ -249,56 +242,30 @@
         <subPane>
           <expand>
             <path>
-              <item name="docsUI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="docsUI" type="462c0819:PsiDirectoryNode" />
+              <item name="PdfnDoc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PdfnDoc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="docsUI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="docsUI" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="docsUI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="docsUI" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="docsUI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="docsUI" type="462c0819:PsiDirectoryNode" />
-              <item name="docs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="docsUI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="docsUI" type="462c0819:PsiDirectoryNode" />
+              <item name="PdfnDoc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PdfnDoc" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="docsUI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="docsUI" type="462c0819:PsiDirectoryNode" />
+              <item name="PdfnDoc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PdfnDoc" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="PdfnDoc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="docsUI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="docsUI" type="462c0819:PsiDirectoryNode" />
+              <item name="PdfnDoc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PdfnDoc" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="PdfnDoc" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="docsUI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="docsUI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="PdfnDoc" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="docsUI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="docsUI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="PdfnDoc" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="PdfnDoc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -323,9 +290,9 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553763277578" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/jacob-1.19/jacob.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3218391" />
     <property name="recentsLimit" value="5" />
@@ -463,11 +430,14 @@
       <workItem from="1554630656278" duration="122000" />
       <workItem from="1554706020344" duration="7164000" />
       <workItem from="1554713509721" duration="440000" />
+      <workItem from="1554717603463" duration="2511000" />
+      <workItem from="1554745604633" duration="120000" />
+      <workItem from="1554786731565" duration="3157000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137764000" />
+    <option name="totallyTimeSpent" value="143552000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -480,8 +450,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.19395867" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.19872814" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -490,7 +461,7 @@
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32969603" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.25643024" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.25643024" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3998441" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -747,16 +718,6 @@
         <state relative-caret-position="-2484" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PdfnDoc/controllers/ConvertController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2461">
-          <caret line="133" column="62" selection-start-line="133" selection-start-column="62" selection-end-line="133" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/PdfnDoc/ui/main.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
@@ -765,10 +726,30 @@
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/PdfnDoc/controllers/Pdf2DocController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/PdfnDoc/controllers/MergeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5083">
-          <caret line="229" column="53" selection-start-line="229" selection-start-column="53" selection-end-line="229" selection-end-column="53" />
+        <state relative-caret-position="292">
+          <caret line="234" column="87" selection-start-line="234" selection-start-column="73" selection-end-line="234" selection-end-column="87" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PdfnDoc/controllers/ConvertController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="101" column="42" selection-start-line="101" selection-start-column="42" selection-end-line="101" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -783,9 +764,9 @@
           <artifact-editor>
             <show-content>
               <type id="library" />
-              <type id="javaee-facet-resources" />
               <type id="jpa-descriptors" />
               <type id="artifact" />
+              <type id="javaee-facet-resources" />
             </show-content>
           </artifact-editor>
           <last-edited>docsUI:jar</last-edited>
@@ -793,7 +774,6 @@
             <option name="proportions">
               <list>
                 <option value="0.3218391" />
-                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -836,7 +816,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>docsUI</last-edited>
+          <last-edited>PdfnDoc</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -848,7 +828,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>jacob</last-edited>
+          <last-edited>com.itextpdf:itextpdf:5.5.13</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

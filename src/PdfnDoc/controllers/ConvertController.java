@@ -92,48 +92,57 @@ public class ConvertController {
 
     @FXML
     private void convertDoc(ActionEvent event) {
+        Stage stage = (Stage) ((Control) event.getSource()).getScene().getWindow();
+
         List<DocFile> selectedItems = list.stream().filter(item -> item.isTick()).collect(Collectors.toList());
         if (selectedItems.isEmpty()) {
-            Stage stage = (Stage) ((Control) event.getSource()).getScene().getWindow();
             Utils.getInstance().showDialog(stage, "Something...not proper", "Doc files to convert is empty.");
+            return;
         } else {
-            try {
-                doc2Pdf(selectedItems);
-            } catch (Exception e) {
-                Stage stage = (Stage) ((Control) event.getSource()).getScene().getWindow();
-                Utils.getInstance().showDialog(stage, "Some exceptions", "e.getMessage()");
-            }
+            doc2Pdf(selectedItems, stage);
         }
     }
 
-    private void doc2Pdf(List<DocFile> doclist) throws Exception {
+    private void doc2Pdf(List<DocFile> doclist, Stage stage) {
         pdfList.clear();
         Thread convertThread = new Thread(() -> {
             Platform.runLater(() -> convertProgress.setProgress(0.0));
-            // Word Doc format to pdf Macro code is 17
-            int doc2PdfMacroCode = 17;
-            ActiveXComponent app = new ActiveXComponent("KWPS.Application");
-            app.setProperty("Visible", new Variant(false));
-            //Some version of wps can't use  macro
-            //app.setProperty("AutomationSecurity", new Variant(3));
-            Dispatch docs = app.getProperty("Documents").toDispatch();
+            try {
+                // Word Doc format to pdf Macro code is 17
+                int doc2PdfMacroCode = 17;
+                ActiveXComponent app;
+                app = new ActiveXComponent("KWPS.Application");
+                //                app = new ActiveXComponent("Word.Application");
 
-            Iterator iterator = doclist.iterator();
-            int count = 0;
-            while (iterator.hasNext()) {
-                count++;
-                DocFile docfile = (DocFile) iterator.next();
-                String inputFile = docfile.getPath();
-                String pdfFile = inputFile.substring(0, inputFile.length() - 4) + ".pdf";
-                Dispatch doc = Dispatch.call(docs, "Open", inputFile, false, true).toDispatch();
-                Dispatch.call(doc, "ExportAsFixedFormat", pdfFile, doc2PdfMacroCode);
-                Dispatch.call(doc, "Close", false);
-                updateProgress(count, doclist.size());
-                String pdfName = docfile.getName().substring(0, docfile.getName().length() - 4) + ".pdf";
-                //pdfList is in main FX Thread
-                Platform.runLater(() -> pdfList.add(pdfName));
+                app.setProperty("Visible", new Variant(false));
+                //Some version of wps can't use  macro
+                //app.setProperty("AutomationSecurity", new Variant(3));
+                Dispatch docs = app.getProperty("Documents").toDispatch();
+
+                Iterator iterator = doclist.iterator();
+                int count = 0;
+                while (iterator.hasNext()) {
+                    count++;
+                    DocFile docfile = (DocFile) iterator.next();
+                    String inputFile = docfile.getPath();
+                    String pdfFile = inputFile.substring(0, inputFile.length() - 4) + ".pdf";
+                    Dispatch doc = Dispatch.call(docs, "Open", inputFile, false, true).toDispatch();
+                    try {
+                        Dispatch.call(doc, "ExportAsFixedFormat", pdfFile, doc2PdfMacroCode);
+                    } catch (Exception e) {
+                        Utils.getInstance().showDialog(stage, "Some exceptions", e.getMessage());
+                    }
+                    Dispatch.call(doc, "Close", false);
+                    updateProgress(count, doclist.size());
+                    String pdfName = docfile.getName().substring(0, docfile.getName().length() - 4) + ".pdf";
+                    //pdfList is in main FX Thread
+                    Platform.runLater(() -> pdfList.add(pdfName));
+                }
+                app.invoke("Quit", 0);
+            } catch (Exception e) {
+                Utils.getInstance().showDialog(stage, "Some exceptions", e.getMessage() +
+                        "\n Can't invoke office/wps applications.");
             }
-            app.invoke("Quit", 0);
 
         });
         convertThread.start();

@@ -7,7 +7,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/annotations/16.0.2/annotations-16.0.2.jar!/" />
@@ -25,10 +25,11 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="com.itextpdf:itextpdf:5.5.13" level="project" />
-    <orderEntry type="library" name="com.jfoenix:jfoenix:8.0.8" level="project" />
-    <orderEntry type="library" name="commons-io:commons-io:2.6" level="project" />
-    <orderEntry type="library" name="de.jensd:fontawesomefx-commons:9.1.2" level="project" />
-    <orderEntry type="library" name="jacob" level="project" />
+    <orderEntry type="library" exported="" name="com.itextpdf:itextpdf:5.5.13" level="project" />
+    <orderEntry type="library" exported="" name="com.jfoenix:jfoenix:8.0.8" level="project" />
+    <orderEntry type="library" exported="" name="commons-io:commons-io:2.6" level="project" />
+    <orderEntry type="library" exported="" name="de.jensd:fontawesomefx-commons:9.1.2" level="project" />
+    <orderEntry type="library" exported="" name="jacob" level="project" />
+    <orderEntry type="library" exported="" name="org.apache.pdfbox:pdfbox:2.0.14" level="project" />
   </component>
 </module>
